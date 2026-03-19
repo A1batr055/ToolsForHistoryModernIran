@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A History of Modern Iran — Chronology 大事年表</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #6b6560;
+    --accent: #8b4513;
+    --accent-light: #c4956a;
+    --bg: #faf8f4;
+    --line: #d4cec4;
+    --dot: #8b4513;
+    --dot-ring: #f5f0e8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Crimson Pro', 'Noto Serif SC', Georgia, serif;
+    line-height: 1.7;
+    padding: 3rem 1.5rem 5rem;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--accent);
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    margin-bottom: 0.3rem;
+  }
+
+  header .subtitle { font-size: 1.05rem; color: var(--muted); font-style: italic; }
+  header .book-info { font-size: 0.85rem; color: var(--muted); margin-top: 0.4rem; }
+
+  .timeline {
+    position: relative;
+    padding-left: 110px;
+  }
+
+  /* vertical line */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 90px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent), var(--line) 10%, var(--line) 90%, var(--accent));
+  }
+
+  .era {
+    margin-bottom: 2.5rem;
+  }
+
+  .era-label {
+    position: relative;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    margin-bottom: 1.2rem;
+    margin-left: -110px;
+    padding: 0.3rem 0.8rem;
+    background: var(--accent);
+    color: #fff;
+    display: inline-block;
+    border-radius: 2px;
+  }
+
+  .entry {
+    position: relative;
+    margin-bottom: 1.1rem;
+    padding-bottom: 1.1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+  }
+
+  .entry:last-child { border-bottom: none; }
+
+  /* dot on the line */
+  .entry::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background: var(--dot);
+    border: 3px solid var(--dot-ring);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px var(--dot);
+  }
+
+  .entry.major::before {
+    width: 14px;
+    height: 14px;
+    left: -28px;
+    top: 3px;
+    background: #c0392b;
+    border-color: #fdecea;
+    box-shadow: 0 0 0 2px #c0392b;
+  }
+
+  .year {
+    position: absolute;
+    left: -110px;
+    top: 0;
+    width: 75px;
+    text-align: right;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .year .month {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--muted);
+    line-height: 1.3;
+  }
+
+  .en {
+    font-size: 0.95rem;
+    color: var(--ink);
+    font-family: 'Crimson Pro', serif;
+  }
+
+  .zh {
+    font-size: 0.93rem;
+    color: var(--muted);
+    font-family: 'Noto Serif SC', serif;
+    margin-top: 0.15rem;
+  }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  @media (max-width: 550px) {
+    .timeline { padding-left: 75px; }
+    .timeline::before { left: 58px; }
+    .year { left: -75px; width: 48px; font-size: 0.9rem; }
+    .entry::before { left: -22px; }
+    .entry.major::before { left: -24px; }
+    .era-label { margin-left: -75px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Chronology · 大事年表</h1>
+  <div class="subtitle">A History of Modern Iran</div>
+  <div class="book-info">Ervand Abrahamian 著 · 中英对照</div>
+</header>
+
+<div class="timeline">
+
+  <!-- ====== 凯伽王朝末期 ====== -->
+  <div class="era">
+    <div class="era-label">Late Qajar · 凯伽王朝末期</div>
+
+    <div class="entry">
+      <div class="year">1901</div>
+      <div class="en">D'Arcy Concession</div>
+      <div class="zh">达西石油特许权协议</div>
+    </div>
+
+    <div class="entry major">
+      <div class="year">1905<span class="month">12月</span></div>
+      <div class="en">Bastinadoing of merchants</div>
+      <div class="zh">商人遭受杖刑事件</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1906<span class="month">7月</span></div>
+      <div class="en">Protest in British legation</div>
+      <div class="zh">英国使馆前抗议请愿</div>
+    </div>
+
+    <div class="entry major">
+      <div class="year">1906<span class="month">8月</span></div>
+      <div class="en">Royal promise of constitution</div>
+      <div class="zh">国王允诺颁布宪法</div>
+    </div>
+
+    <div class="entry major">
+      <div class="year">1906<span class="month">10月</span></div>
+      <div class="en">First Majles opens</div>
+      <div class="zh">第一届马杰利斯（国民议会）开幕</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1907<span class="month">8月</span></div>
+      <div class="en">Anglo-Russian Convention</div>
+      <div class="zh">英俄协约</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1908</div>
+      <div class="en">First oil well</div>
+      <div class="zh">第一口油井出油</div>
+    </div>
+
+    <div class="entry major">
+      <div class="year">1908<span class="month">6月</span></div>
+      <div class="en">Coup d'état</div>
+      <div class="zh">政变（穆罕默德·阿里国王炮轰议会）</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1909</div>
+      <div class="en">Anglo-Persian Oil Company formed</div>
+      <div class="zh">英波石油公司成立</div>
+    </div>
+
+    <div class="entry major">
+      <div class="year">1909<span class="month">7月</span></div>
+      <div class="en">Revolutionaries capture Tehran</div>
+      <div class="zh">立宪革命军攻克德黑兰</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1909<span class="month">11月</span></div>
+      <div class="en">Second Majles opens</div>
+      <div class="zh">第二届马杰利斯开幕</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1911</div>
+      <div class="en">Russian ultimatum</div>
+      <div class="zh">俄国最后通牒</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1912</div>
+      <div class="en">British Navy converts from coal to oil</div>
+      <div class="zh">英国海军从燃煤转向燃油</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1919<span class="month">8月</span></div>
+      <div class="en">Anglo-Persian Agreement</div>
+      <div class="zh">英波协定</div>
+    </div>
+  </div>
+
+  <!-- ====== 巴列维王朝 ====== -->
+  <div class="era">
+    <div class="era-label">Pahlavi Era · 巴列维时代</div>
+
+    <div class="entry major">
+      <div class="year">1921<span class="month">2月</span></div>
+      <div class="en">Coup d'état</div>
+      <div class="zh">政变（礼萨汗夺权）</div>
+    </div>
+
+    <div class="entry major">
+      <div class="year">1925</div>
+      <div class="en">Constituent Assembly terminates the Qajar dynasty</div>
+      <div class="zh">制宪议会终结凯伽王朝</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1926</div>
+      <div class="en">Coronation of Reza Shah</div>
+      <div class="zh">礼萨·沙阿加冕</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1927</div>
+      <div class="en">Abolition of Capitulations</div>
+      <div class="zh">废除领事裁判权</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1928</div>
+      <div class="en">New dress code</div>
+      <div class="zh">颁布新着装法令</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1933</div>
+      <div class="en">Cancellation of D'Arcy Concession</div>
+      <div class="zh">废除达西特许权协议</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1934</div>
+      <div class="en">Official name change of Persia to Iran</div>
+      <div class="zh">国名由"波斯"正式更改为"伊朗"</div>
+    </div>
+
+    <div class="entry major">
+      <div class="year">1941<span class="month">8月</span></div>
+      <div class="en">Anglo-Soviet invasion</div>
+      <div class="zh">英苏联合入侵伊朗</div>
+    </div>
+
+    <div class="entry major">
+      <div class="year">1951</div>
+      <div class="en">Oil nationalization</div>
+      <div class="zh">石油国有化运动</div>
+    </div>
+
+    <div class="entry major">
+      <div class="year">1953</div>
+      <div class="en">CIA coup</div>
+      <div class="zh">中情局政变（推翻摩萨台政府）</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1963</div>
+      <div class="en">White Revolution</div>
+      <div class="zh">白色革命</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1974</div>
+      <div class="en">Quadrupling of oil prices</div>
+      <div class="zh">石油价格翻两番</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1975</div>
+      <div class="en">Creation of Resurgence Party</div>
+      <div class="zh">复兴党成立</div>
+    </div>
+  </div>
+
+  <!-- ====== 伊斯兰共和国 ====== -->
+  <div class="era">
+    <div class="era-label">Islamic Republic · 伊斯兰共和国时期</div>
+
+    <div class="entry major">
+      <div class="year">1979<span class="month">2月</span></div>
+      <div class="en">Islamic Revolution</div>
+      <div class="zh">伊斯兰革命</div>
+    </div>
+
+    <div class="entry major">
+      <div class="year">1979<span class="month">11月</span></div>
+      <div class="en">Students take the US embassy</div>
+      <div class="zh">学生占领美国大使馆（人质危机）</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1979<span class="month">12月</span></div>
+      <div class="en">Referendum for the Islamic constitution</div>
+      <div class="zh">伊斯兰宪法全民公投</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1980<span class="month">1月</span></div>
+      <div class="en">Bani-Sadr elected president</div>
+      <div class="zh">巴尼萨德尔当选总统</div>
+    </div>
+
+    <div class="entry major">
+      <div class="year">1980<span class="month">9月</span></div>
+      <div class="en">Iraq invades Iran</div>
+      <div class="zh">伊拉克入侵伊朗（两伊战争爆发）</div>
+    </div>
+
+    <div class="entry major">
+      <div class="year">1981<span class="month">6月</span></div>
+      <div class="en">Mojahedin uprising; Bani-Sadr dismissed; Khamenei elected president</div>
+      <div class="zh">穆贾赫丁起义；巴尼萨德尔被罢免；哈梅内伊当选总统</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1983</div>
+      <div class="en">Iran invades Iraq</div>
+      <div class="zh">伊朗反攻入侵伊拉克</div>
+    </div>
+
+    <div class="entry major">
+      <div class="year">1988</div>
+      <div class="en">Iran–Iraq War ends</div>
+      <div class="zh">两伊战争结束</div>
+    </div>
+
+    <div class="entry major">
+      <div class="year">1989</div>
+      <div class="en">Khomeini dies; Khamenei elected Supreme Leader; Rafsanjani elected president</div>
+      <div class="zh">霍梅尼逝世；哈梅内伊当选最高领袖；拉夫桑贾尼当选总统</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">1997</div>
+      <div class="en">Khatemi elected president</div>
+      <div class="zh">哈塔米当选总统</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">2005</div>
+      <div class="en">Ahmadinejad elected president</div>
+      <div class="zh">艾哈迈迪内贾德当选总统</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">2013</div>
+      <div class="en">Rouhani elected president</div>
+      <div class="zh">鲁哈尼当选总统</div>
+    </div>
+
+    <div class="entry">
+      <div class="year">2017</div>
+      <div class="en">Rouhani re-elected president</div>
+      <div class="zh">鲁哈尼连任总统</div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <em>A History of Modern Iran</em> by Ervand Abrahamian · Chronology 大事年表 · 翻译对照版
+</footer>
+
+</body>
+</html>
